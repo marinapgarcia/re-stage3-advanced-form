@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #BFD7E4;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.page{
+  height: 1930px;
+}
+
+header h1, legend, button{
+  color: #FFF;
+  font-family: 'Staatliches', sans-serif;
+  line-height: normal;
+}
+
+header h1{
+  font-size: 36px;
+
+  margin-top: 107px;
+}
+
+header p{
+  color:#fff;
+  font-size: 16px;
+  line-height: normal;
+
+  width: 391px;
+  height: 46px;
+}
+
+legend{
+  color: #253B51;
+
+  font-size: 24px;
+  line-height: 34px;
+}
+
+button{
+  font-size: 20px;
+  line-height: 26px;
+}
+
+header{
+  background: #293241;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 100%;
+  height: 465px;
+}
+
+img{
+  width: 225px;
+  height: 100px;
+  margin-top: 2px;
+}
+
+#top{
+  background: #F67669;
+  border-radius: 20px 20px 0px 0px;
+
+  padding: 50px 275px 50px 275px;
+  margin-top: 32px;
+  
+  width: 750px;
+  height: 133px;
+}
+
+header legend{
+  color: #FFF;
+
+  font-family: 'Staatliches', sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+form{
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  width: 750px;
+  height: 1075px;
+
+  padding: 32px 64px 64px 64px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+fieldset {
+  border: none;
+}
+
+#line{
+  background: #E6E6F0;
+
+  border: none;
+  width: 622px;
+  height: 1px;
+  margin-bottom: 30px;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  align-items: center;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper input, 
+.input-wrapper select{
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  
+  height: 56px;
+
+  padding: 0 24px;
+
+  margin-bottom: 20px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #6c6a71;
+}
+
+#email{
+  margin-bottom: 0;
+}
+
+.input-wrapper-name{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-wrapper-name input{
+  width: 300px;
+}
+
+.input-wrapper label span {
+  margin-left: 8px;
+
+  font-size: 12px;
+  line-height: 20px;
+  
+  color: #C1BCCC;;
+}
+
+.input-wrapper label span:hover {
+  color: #6c6a71;
+}
+
+.input-wrapper textarea{
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  width: auto;
+  height: 167px;
+
+  margin-bottom: 30px;
+  padding: 10px 24px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.schedule{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+#mentoring-date{
+  width: 300px;
+  margin-right: 32px;
+}
+
+.input-wrapper date{
+  margin-bottom: 0;
+}
+
+#mentoring-start, #mentoring-end{
+  width: 140px;
+  gap: 10px;
+}
+
+.checkbox-wrapper label{
+  color: #4E4958;
+
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.checkbox-wrapper{
+  position: relative;
+}
+
+.checkbox-wrapper label{
+  color: #4E4958;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-wrapper input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before{
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  background: #FAFAFC;
+}
+
+.checkbox-wrapper input:checked + label::before{
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_2702_23)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2702_23'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus + label::before{
+  outline: 2px solid black;
+}
+
+button{
+  border-radius: 8px;
+  border: none;
+  background: #F67669;
+
+  margin-top: 14px;
+  
+  display: flex;
+  width: 622px;
+  height: 51px;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
